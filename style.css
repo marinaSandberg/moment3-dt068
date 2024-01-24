@@ -38,6 +38,21 @@ h2 {
 h3 {
     font-size: 22px;
 }
+
+h4 {
+    font-size: 16px;
+}
+
+h5 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 18px;
+    text-align: justify;
+}
 /*---------------------------------HEADER--------------------------------*/
 header {
     background-color:rgb(217, 217, 217);
@@ -101,6 +116,7 @@ section {
     align-content: center;
     justify-items: center;
     gap: 20px;
+    width: 375px;
 }
 
 .service {
@@ -121,6 +137,52 @@ section {
     background-color: rgb(167, 206, 187);
 }
 
+/*------------------------------OTHER PAGES-----------------------------*/
+.page-titles {
+    padding: 20px;
+    width: 90vw;
+    height: 70px;
+}
+
+.p-text {
+    padding: 15px;
+    width: 90vw;
+}
+
+.title-link {
+    font-size: 22px;
+    color: black;
+}
+
+.forms {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: baseline;
+    text-align: left;
+}
+
+.forms form {
+    display: flex;
+    flex-direction: row;
+}
+
+.forms p, #boka {
+    grid-column: 1/span 2;
+}
+
+#boka {
+    text-align: center;
+    width: 100px;
+}
+
+.grid-row {
+    grid-column: 1/span 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 15px 0 15px 0;
+}
 
 /*---------------------------------FOOTER--------------------------------*/
 footer {
@@ -138,6 +200,11 @@ footer {
 footer p {
     font-size: 16px;
     font-style: italic;
+}
+
+.bokningar {
+    position:absolute;
+    bottom: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -162,5 +229,9 @@ footer p {
     a h2:hover, #about button:hover{
         transform: scale(1.2);
         cursor: pointer;
+    }
+
+    .title-link:hover {
+        font-weight: bold;
     }
   }
