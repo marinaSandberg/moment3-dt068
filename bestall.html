@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kommunal Färdtjänst</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">SV</a>
+            <a href="products.html">EN</a>
+        </nav>
+        <a href="index.html"><img id="logo" src="images/logo.png" alt="logo image"></a>
+        <h1>Kommunal Färdtjänst</h1>
+        <h2>Solna Kommun</h2>
+    </header>
+    <form action="/search" method="get">
+            <input type="text" placeholder="Skriv sökord här">
+            <button class="green" type="submit">Sök</button>
+    </form>
+    <section>
+        <div class="page-titles green" >
+            <h3>Beställ färdtjänst</h3>
+        </div>
+        <div class="forms">
+            <h5>Kundnummer:</h5>
+            <form action="/search" method="get">
+                <input type="text" placeholder="skriv här">
+            </form>
+            <h5>Från:</h5>
+            <form action="/search" method="get">
+                <input type="text" placeholder="skriv här">
+            </form>
+            <h5>Till:</h5>
+            <form action="/search" method="get">
+                <input type="text" placeholder="skriv här">
+            </form>
+            <h5>Datum:</h5>
+            <form action="/search" method="get">
+                <input type="text" placeholder="välj datum">
+            </form>
+            <h5>Tid:</h5>
+            <form action="/search" method="get">
+                <input type="text" placeholder="välj tid">
+            </form>
+            <p>Markera om resan återkommer varje</p>
+            <div class="grid-row">
+                <div class="checkbox">
+                    <label for="day">dag</label>
+                    <input type="checkbox" id="day" name="day">
+                </div>
+                <div class="checkbox">
+                    <label for="week">vecka</label>
+                    <input type="checkbox" id="week" name="week">
+                </div>
+                <div class="checkbox">
+                    <label for="month">månad</label>
+                    <input type="checkbox" id="month" name="month">
+                </div>
+            </div>
+        </div>
+    </section>
+    <button id="boka" class="green" type="submit">BOKA</button>
+    <footer class="bokningar">
+        <p>Region Stockholm, 2023</p>
+    </footer>
+</body>
+</html>
