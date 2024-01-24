@@ -76,6 +76,9 @@ nav {
 
 nav a {
     padding: 10px;
+}
+
+a {
     color: black;
 }
 
@@ -116,7 +119,7 @@ section {
     align-content: center;
     justify-items: center;
     gap: 20px;
-    width: 375px;
+    width: 90vw;
 }
 
 .service {
@@ -182,6 +185,21 @@ section {
     justify-content: space-between;
     align-items: baseline;
     margin: 15px 0 15px 0;
+}
+
+#kundservice-p {
+    text-align: left;
+}
+
+#kundservice-p h5 {
+    display: inline-block;
+    margin-bottom: 0;
+    padding: 5px;
+}
+
+#kundservice-p h5.non-bold {
+    display: inline;
+    font-weight: 400;
 }
 
 /*---------------------------------FOOTER--------------------------------*/
