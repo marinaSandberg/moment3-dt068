@@ -99,6 +99,7 @@ a #logo {
 form {
     margin: 10px 0 20px 0;
     display: flex;
+    align-items: baseline;
 }
 
 input {
@@ -178,8 +179,21 @@ section {
 }
 
 .forms1-column {
+    display: flex;
     flex-direction: column;
     text-align: left;
+    width: 90vw;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.flex-row a {
+    padding: 10px 0 10px 0;
+    font-size: 18px;
 }
 
 .forms1-column input, .forms1-column textarea {
@@ -193,7 +207,15 @@ section {
 }
 
 #avboka {
-    width: 120px;
+    width: 150px;
+}
+
+.button {
+    width: 50px;
+    padding: 1px;
+    border: 1px solid black;
+    border-radius: 3px;
+    font-style: normal;
 }
 
 #boka {
@@ -264,7 +286,7 @@ footer p {
 
     /*Hover*/
 
-    nav a:hover {
+    nav a:hover, .flex-row a, .title-link:hover {
         font-weight: bold;
     }
 
@@ -273,13 +295,10 @@ footer p {
         cursor: pointer;
     }
 
-    .title-link:hover {
-        font-weight: bold;
-    }
-
     button:hover {
         cursor: pointer;
         font-weight: 600;
         transition: 0.3s;
     }
+
   }
