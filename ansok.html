@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">SV</a>
+            <a href="products.html">EN</a>
+        </nav>
+        <a href="index.html"><img id="logo" src="images/logo.png" alt="logo image"></a>
+        <h1>Kommunal Färdtjänst</h1>
+        <h2>Solna Kommun</h2>
+    </header>
+    <form action="/search" method="get">
+            <input type="text" placeholder="Skriv sökord här">
+            <button class="green" type="submit">Sök</button>
+    </form>
+    <section>
+        <div class="page-titles green" >
+            <h3>Ansök om färdtjänst</h3>
+        </div>
+        <form class="forms1-column" action="/submit-contact" method="post">
+            <label for="name">Namn:</label>
+            <input type="text" id="name" name="name" placeholder="skriv här" required>
+
+            <label for="p-number">Personnummer:</label>
+            <input type="number" id="p-number" name="p-number" placeholder="skriv här" required>
+    
+            <label for="support">Hjälpmedel:</label>
+            <input type="text" id="support" name="support" placeholder="skriv här">
+
+            <label for="assistance">Medresenär:</label>
+            <input type="text" id="assistance" name="assistance" placeholder="skriv här">
+    
+            <label for="message">Beskrivning:</label>
+            <textarea id="message" name="message" rows="10" placeholder="skriv här" required></textarea>
+
+            <label for="file">Ladda upp dokument:</label>
+            <input type="text" id="file" name="file" placeholder="välj fil">
+        </form>
+    </section>
+    <button class="green button button2" type="submit">SKICKA</button>
+    <div class="forms1-column">
+        <h5>Ansökningstid</h5>
+        <p>Ansökningstiden är normalt tre veckor. Tänk på att inför storhelger är belastningen stor och många reseavgångar fullbokade så var då ute i extra god tid. Handläggaren tar kontakt med dig via telefon när din ansökan kommit in. Vid samtalet bokas tid för byråbesök eller hembesök och eventuellt behov av komplettering av ansökan tas upp.</p>
+    </div>
+    <footer>
+        <p>Region Stockholm, 2023</p>
+    </footer>
+</body>
+</html>

@@ -218,6 +218,11 @@ section {
     font-style: normal;
 }
 
+.button2 {
+    width: 100px;
+    margin-bottom: 80px;
+}
+
 #boka {
     margin-top: 20px;
     text-align: center;
