@@ -3,12 +3,10 @@
     padding: 0;
     margin-block: 0;
     padding-inline: 0;
-    font-size: 18px;
     box-sizing: border-box;
     font-family: "Istok Web", sans-serif;
     font-weight: 400;
     font-size: 16px;
-    font-style: normal;
 }
 
 body {
@@ -43,7 +41,7 @@ h4 {
     font-size: 16px;
 }
 
-h5 {
+h5, label {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 5px;
@@ -51,7 +49,6 @@ h5 {
 
 p {
     font-size: 18px;
-    text-align: justify;
 }
 /*---------------------------------HEADER--------------------------------*/
 header {
@@ -101,20 +98,32 @@ a #logo {
 /*---------------------------------SEARCH--------------------------------*/
 form {
     margin: 10px 0 20px 0;
+    display: flex;
+}
+
+input {
+    padding: 1px 5px 1px 5px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+input[placeholder] {
     font-style: italic;
 }
 
 button {
-    padding: 5px;
-    border: thin black;
+    width: 50px;
+    padding: 1px;
+    border: 1px solid black;
+    border-radius: 3px;
     font-style: normal;
-    font-size: 16px;
 }
 
 /*---------------------------------TOPICS--------------------------------*/
 
 section {
     display: grid;
+    grid-template-rows: 1fr;
     justify-content: center;
     align-content: center;
     justify-items: center;
@@ -160,31 +169,46 @@ section {
 .forms {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin: 0;
+    gap: 5px;
+    row-gap: 15px;
     align-items: baseline;
+    text-align: left;
+    justify-items: left;
+}
+
+.forms1-column {
+    flex-direction: column;
     text-align: left;
 }
 
-.forms form {
-    display: flex;
-    flex-direction: row;
+.forms1-column input, .forms1-column textarea {
+    width: 100%;
+    margin: 5px 0 20px 0;
 }
 
 .forms p, #boka {
     grid-column: 1/span 2;
+    text-align: left;
+}
+
+#avboka {
+    width: 120px;
 }
 
 #boka {
+    margin-top: 20px;
     text-align: center;
     width: 100px;
 }
 
 .grid-row {
     grid-column: 1/span 2;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
     align-items: baseline;
-    margin: 15px 0 15px 0;
 }
 
 #kundservice-p {
@@ -251,5 +275,11 @@ footer p {
 
     .title-link:hover {
         font-weight: bold;
+    }
+
+    button:hover {
+        cursor: pointer;
+        font-weight: 600;
+        transition: 0.3s;
     }
   }

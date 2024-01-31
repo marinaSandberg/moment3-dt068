@@ -24,22 +24,18 @@
             <button class="green" type="submit">Sök</button>
     </form>
     <section>
-        <div class="page-titles blue" >
-            <h3>Kundservice</h3>
+        <div class="page-titles green" >
+            <h3>Avboka / Ändra resa</h3>
         </div>
-        <div id="kundservice-p">
-            <h5 class="non-bold">Har du frågor eller behöver hjälp med bokning så är du välkommen att kontakta oss. <br><br>
-
-            Vårt telefonnummer är</h5><h5>08-720 80 80</h5>
-            <h5 class="non-bold">
-            och vi har öppet helgfria vardagar mellan klockan 7 och 20. <br><br>
-                        
-            Du kan också använda <a href="contact-form.html"><h5>detta förmulär.</h5></a>Det skickas sedan direkt in till vår kundservice. <br><br>
-            Eller mejla till: fardtjanst@regionstockholm.se
-            </h5>              
-        </div>
+        <form action="/search" method="get">
+            <label for="number">Kundnummer:</label>
+            <form action="/search" method="get">
+                <input id="avboka" type="text" placeholder="skriv här">
+                <button class="green" type="submit">Sök</button>
+            </form>
+        </form>
     </section>
-    <footer>
+    <footer class="bokningar">
         <p>Region Stockholm, 2023</p>
     </footer>
 </body>

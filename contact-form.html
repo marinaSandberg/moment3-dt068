@@ -24,41 +24,19 @@
             <button class="green" type="submit">Sök</button>
     </form>
     <section>
-        <div class="page-titles green" >
-            <h3>Beställ färdtjänst</h3>
+        <div class="page-titles blue" >
+            <h3>Kontaktformulär</h3>
         </div>
-        <form class="forms" action="/search" method="get">
+        <form class="forms1-column" action="/submit-contact" method="post">
             <label for="number">Kundnummer:</label>
-            <input type="text" placeholder="skriv här">
-
-            <label for="from">Från:</label>
-            <input type="text" placeholder="skriv här">
-
-            <label for="to">Till:</label>
-            <input type="text" placeholder="skriv här">
-
-            <label for="date">Datum:</label>
-            <input type="text" placeholder="välj datum">
-
-            <label for="time">Tid:</label>
-            <input type="text" placeholder="välj tid">
-            <p>Markera om resan återkommer varje</p>
-            <div class="grid-row">
-                <div>
-                    <label for="day">dag</label>
-                    <input type="checkbox" id="day" name="day">
-                </div>
-                <div>
-                    <label for="week">vecka</label>
-                    <input type="checkbox" id="week" name="week">
-                </div>
-                <div>
-                    <label for="month">månad</label>
-                    <input type="checkbox" id="month" name="month">
-                </div>
-            </div>
+            <input type="text" id="number" name="number" placeholder="skriv här" required>
+    
+            <label for="theme">Ämne:</label>
+            <input type="text" id="theme" name="theme" placeholder="skriv här" required>
+    
+            <label for="message">Beskrivning:</label>
+            <textarea id="message" name="message" rows="10" placeholder="skriv här" required></textarea>
         </form>
-
     </section>
     <button id="boka" class="green" type="submit">BOKA</button>
     <footer>

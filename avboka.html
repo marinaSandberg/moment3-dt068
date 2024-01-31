@@ -27,13 +27,13 @@
         <div class="page-titles green" >
             <h3>Avboka / Ändra resa</h3>
         </div>
-        <div class="forms">
-            <h5>Kundnummer:</h5>
+        <form action="/search" method="get">
+            <label for="number">Kundnummer:</label>
             <form action="/search" method="get">
-                <input type="text" placeholder="skriv här">
-                <button class="green" type="submit">Sök</button>
+                <input id="avboka" type="text" placeholder="skriv här">
+                <button class="green" type="submit" onclick="window.location.href='avboka_2.html'" >Sök</button>
             </form>
-        </div>
+        </form>
     </section>
     <footer class="bokningar">
         <p>Region Stockholm, 2023</p>
