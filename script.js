@@ -6,8 +6,6 @@ function adjustFooterPosition(contentSelector, footerSelector) {
       let contentHeight = contentElement.offsetHeight;
       let screenHeight = window.innerHeight;
 
-    console.log(contentHeight, screenHeight);
-
         if (contentHeight < screenHeight) {
             footer.classList.add("bokningar");
         }   
@@ -17,10 +15,25 @@ function adjustFooterPosition(contentSelector, footerSelector) {
     }
 }
 
- window.addEventListener('load', function () {
+function addsearchLabel () {
+    let screenWidth = window.innerWidth;
+    let searchForm = document.querySelector("main > form");
+    let searchLabel = document.createElement("label");
+    searchLabel.setAttribute("for", "search");
+    console.log(screenWidth, searchForm);
+    
+    searchLabel.innerText = (screenWidth > 1000) ? "Sök" : "";
+
+    searchForm.appendChild(searchLabel);
+}
+
+function onWindowLoad() {
     adjustFooterPosition('main', 'footer');
-  });
+    addSearchLabel();
+}
+
+window.addEventListener('load', onWindowLoad);
   
-  window.addEventListener('resize', function () {
-    adjustFooterPosition('main', 'footer');
-  });
+window.addEventListener('resize', onWindowLoad);
+
+
