@@ -8,8 +8,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
+    <main>
     <header>
         <nav>
             <a href="index.html">SV</a>
@@ -27,16 +29,17 @@
         <div class="page-titles green" >
             <h3>Avboka / Ändra resa</h3>
         </div>
-        <form action="/search" method="get">
+        <form class="forms" action="/search" method="get">
             <label for="number">Kundnummer:</label>
-            <form action="/search" method="get">
-                <input id="avboka" type="text" placeholder="skriv här">
+            <div id="avboka">
+                <input type="text" placeholder="skriv här">
                 <a class="button green" href="avboka2.html">Sök</a>
-            </form>
+            </div>
         </form>
     </section>
     <footer class="bokningar">
         <p>Region Stockholm, 2023</p>
     </footer>
+    </main>
 </body>
 </html>

@@ -9,7 +9,7 @@
     font-size: 16px;
 }
 
-body {
+main {
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -214,11 +214,10 @@ section {
 }
 
 #avboka {
-    width: 150px;
+    display: flex;
 }
 
 .button {
-    width: 50px;
     padding: 1px;
     border: 1px solid black;
     border-radius: 3px;
