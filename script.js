@@ -15,16 +15,24 @@ function adjustFooterPosition(contentSelector, footerSelector) {
     }
 }
 
-function addsearchLabel () {
+function addSearchLabel () {
     let screenWidth = window.innerWidth;
     let searchForm = document.querySelector("main > form");
-    let searchLabel = document.createElement("label");
-    searchLabel.setAttribute("for", "search");
-    console.log(screenWidth, searchForm);
+    let existingLabel = searchForm.querySelector("label[for='search']");
     
-    searchLabel.innerText = (screenWidth > 1000) ? "Sök" : "";
+    if (existingLabel) {
+        existingLabel.innerText = (screenWidth > 1000) ? "Sökfunktion" : "";
+    } else {
+        let searchLabel = document.createElement("label");
+        searchLabel.setAttribute("for", "search");
+        searchLabel.setAttribute("class", "search");
 
-    searchForm.appendChild(searchLabel);
+        searchLabel.innerText = (screenWidth > 1000) ? "Sökfunktion" : "";
+
+        searchForm.insertBefore(searchLabel, searchForm.firstChild);
+    }
+
+    console.log(screenWidth, searchForm);
 }
 
 function onWindowLoad() {

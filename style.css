@@ -123,6 +123,10 @@ button {
     font-style: normal;
 }
 
+.search {
+    margin-right: 10px;
+}
+
 /*---------------------------------TOPICS--------------------------------*/
 
 section {
