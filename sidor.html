@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">SV</a>
+            <a href="products.html">EN</a>
+        </nav>
+        <a href="index.html"><img id="logo" src="images/logo.png" alt="logo image"></a>
+        <h1>Kommunal Färdtjänst</h1>
+        <h2>Solna Kommun</h2>
+    </header>
+    <form action="/search" method="get">
+            <input type="text" placeholder="Skriv sökord här">
+            <button class="green" type="submit">Sök</button>
+    </form>
+    <section>
+        <div class="page-titles blue" >
+            <h3>Mina sidor</h3>
+        </div>
+        <form class="forms" action="/search" method="get">
+            <label for="number">Kundnummer:</label>
+            <input type="text" name="number" placeholder="skriv här">
+
+            <label for="password">Lösenord:</label>
+            <input type="text" name="password" placeholder="skriv här">
+        </form>
+
+    </section>
+    <a href="sidor2.html" class="button button2 blue" type="submit">LOGGA IN</a>
+    <footer class="bokningar">
+        <p>Region Stockholm, 2023</p>
+    </footer>
+</body>
+</html>

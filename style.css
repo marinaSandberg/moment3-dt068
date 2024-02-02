@@ -41,7 +41,7 @@ h4 {
     font-size: 16px;
 }
 
-h5, label {
+h5, label, .size-h5 {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 5px;
@@ -106,6 +106,11 @@ input {
     padding: 1px 5px 1px 5px;
     border: 1px solid black;
     border-radius: 3px;
+}
+
+input[type="text"], input[type="number"] {
+    width: 45vw;
+    max-width: 300px;
 }
 
 input[placeholder] {
@@ -176,6 +181,8 @@ section {
     align-items: baseline;
     text-align: left;
     justify-items: left;
+    margin: 5px 0 20px 0;
+    width: 90vw;
 }
 
 .forms1-column {
@@ -201,7 +208,7 @@ section {
     margin: 5px 0 20px 0;
 }
 
-.forms p, #boka {
+.forms p, #boka, .forms a {
     grid-column: 1/span 2;
     text-align: left;
 }
@@ -223,6 +230,11 @@ section {
     margin-bottom: 80px;
 }
 
+.button3 {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
 #boka {
     margin-top: 20px;
     text-align: center;
@@ -236,6 +248,7 @@ section {
     grid-template-rows: 1fr;
     gap: 20px;
     align-items: baseline;
+    width: 90vw;
 }
 
 #kundservice-p {
