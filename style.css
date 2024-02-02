@@ -56,7 +56,6 @@ header {
     height: 200px;
     width: 100vw;
     display: grid;
-    width: 100vw;
     justify-content: center;
     align-content: center;
     justify-items: center;
