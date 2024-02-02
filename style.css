@@ -287,18 +287,6 @@ footer p {
 }
 
 @media screen and (min-width: 768px) {
-
-    #featured-products {
-        grid-column-gap: 10vw;
-    }
-    #products h1 {
-        grid-column: 1 /span 3;
-    }
-    #products {
-        grid-column-gap: 10vw;
-        grid-row-gap: 5vh;
-    }
-
     /*Hover*/
 
     nav a:hover, .flex-row a:hover, .title-link:hover {
@@ -315,5 +303,45 @@ footer p {
         font-weight: 600;
         transition: 0.3s;
     }
-
   }
+
+@media screen and (min-width: 1000px) {
+    .first-page {
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+
+    .service {
+        width: 40vw;
+    }
+
+    section, .p-text, .page-titles, .forms1-column {
+        max-width: 1100px;
+    }
+
+    .forms {
+        grid-template-columns: 550px 550px;
+        max-width: 1100px;
+    }
+
+    .grid-row {
+        grid-template-columns: 250px 250px 250px;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .first-page {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .service {
+        width: 30vw;
+        max-width: 500px;
+    }
+
+    section, .p-text, .page-titles {
+        width: 80vw;
+    }
+}
+
+
