@@ -32,12 +32,31 @@ function addSearchLabel () {
         searchForm.insertBefore(searchLabel, searchForm.firstChild);
     }
 
-    console.log(screenWidth, searchForm);
+    console.log(screenWidth);
+}
+
+function hideLocation () {
+    let screenWidth = window.innerWidth;
+    let title = document.querySelector(".title");
+    
+    if (screenWidth < 1000) {
+            if (!title.classList.contains("hidden")) {
+                title.classList.add("hidden");
+            }
+        }
+    else {
+            if (title && title.classList.contains("hidden")) {
+                title.classList.remove("hidden");
+            }
+        };
+
+        console.log(titles);
 }
 
 function onWindowLoad() {
     adjustFooterPosition('main', 'footer');
     addSearchLabel();
+    hideLocation();
 }
 
 window.addEventListener('load', onWindowLoad);

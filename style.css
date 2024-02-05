@@ -127,6 +127,26 @@ button {
     margin-right: 10px;
 }
 
+/*---------------------------------LOCATION--------------------------------*/
+.title {
+    display: flex;
+    text-align: left;
+    width: 90vw;
+    margin-bottom: 10px;
+}
+
+.size-h6-italic {
+    font-style: italic;
+    margin-right: 10px;
+}
+
+.size-h6-bold {
+    font-style: bold;
+}
+.hidden {
+    display: none;
+}
+
 /*---------------------------------TOPICS--------------------------------*/
 
 section {
@@ -293,7 +313,7 @@ footer p {
 @media screen and (min-width: 768px) {
     /*Hover*/
 
-    nav a:hover, .flex-row a:hover, .title-link:hover {
+    nav a:hover, .flex-row a:hover, .title-link:hover, .service h3:hover {
         font-weight: bold;
     }
 
@@ -319,7 +339,7 @@ footer p {
         width: 40vw;
     }
 
-    section, .p-text, .page-titles, .forms1-column {
+    section, .p-text, .page-titles, .forms1-column, .title {
         max-width: 1100px;
     }
 
@@ -343,7 +363,7 @@ footer p {
         max-width: 500px;
     }
 
-    section, .p-text, .page-titles {
+    section, .p-text, .page-titles, .title {
         width: 80vw;
     }
 }
