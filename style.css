@@ -319,12 +319,12 @@ footer p {
         font-weight: bold;
     }
 
-    a h2:hover, #about button:hover{
+    a h2:hover, #about {
         transform: scale(1.2);
         cursor: pointer;
     }
 
-    button:hover {
+    button:hover, .button:hover {
         cursor: pointer;
         font-weight: 600;
         transition: 0.3s;
