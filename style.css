@@ -90,7 +90,10 @@ nav a:active {
 
 a #logo {
     display: grid;
+}
 
+#access-logo {
+    height: 25px;
 }
 
 /*---------------------------------SEARCH--------------------------------*/
@@ -274,7 +277,7 @@ section {
     width: 90vw;
 }
 
-#kundservice-p {
+#kundservice-p, .left {
     text-align: left;
 }
 
@@ -319,7 +322,7 @@ footer p {
         font-weight: bold;
     }
 
-    a h2:hover, #about {
+    a h2:hover, #about, #access-logo:hover {
         transform: scale(1.2);
         cursor: pointer;
     }
