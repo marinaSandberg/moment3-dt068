@@ -143,9 +143,7 @@ button {
 .size-h6-bold {
     font-style: bold;
 }
-.hidden {
-    display: none;
-}
+
 
 /*---------------------------------TOPICS--------------------------------*/
 
@@ -212,6 +210,10 @@ section {
     flex-direction: column;
     text-align: left;
     width: 90vw;
+}
+
+.hidden {
+    display: none;
 }
 
 .flex-row {
@@ -363,8 +365,23 @@ footer p {
         max-width: 500px;
     }
 
-    section, .p-text, .page-titles, .title {
+    section, .page-titles, .title {
         width: 80vw;
+    }
+
+    .laptop-columns .blue {
+        background-color: none;
+    }
+
+    .laptop-columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+        background-color: rgb(205, 229, 255);
+    }
+
+    .p-text {
+        width: 525px;
     }
 }
 

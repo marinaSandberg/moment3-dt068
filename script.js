@@ -40,7 +40,7 @@ function hideLocation () {
     let title = document.querySelector(".title");
     
     if (screenWidth < 1000) {
-            if (!title.classList.contains("hidden")) {
+            if (title && !title.classList.contains("hidden")) {
                 title.classList.add("hidden");
             }
         }
@@ -48,15 +48,57 @@ function hideLocation () {
             if (title && title.classList.contains("hidden")) {
                 title.classList.remove("hidden");
             }
-        };
+        }
+}
 
-        console.log(titles);
+function ansokForm () {
+    let screenWidth = window.innerWidth;
+    let forms = document.querySelectorAll(".this-form");
+
+    forms.forEach(form => {
+        if (screenWidth < 1000) {
+            if (form.classList.contains("form1")) {
+                form.classList.remove("hidden");
+            } else {
+                form.classList.add("hidden");
+            }
+        } else {
+            if (form.classList.contains("form2")) {
+                form.classList.remove("hidden");
+            } else {
+                form.classList.add("hidden");
+            }
+        }
+    });
+        console.log(forms);
+}
+
+function infoBlue () {
+    let screenWidth = window.innerWidth;
+    let blues = document.querySelectorAll(".this-blue");
+    
+    if (screenWidth > 1500) {
+        blues.forEach(blue => {
+            if (blue.classList.contains("blue")) {
+                blue.classList.remove("blue")
+            }
+        });
+    }
+    else {
+        blues.forEach(blue => {
+            if (blue.classList.contains("this-blue")) {
+                blue.classList.add("blue")
+            }
+        });
+    }
 }
 
 function onWindowLoad() {
     adjustFooterPosition('main', 'footer');
     addSearchLabel();
     hideLocation();
+    infoBlue();
+    ansokForm();
 }
 
 window.addEventListener('load', onWindowLoad);
